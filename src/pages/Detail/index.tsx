@@ -3,8 +3,22 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 import { Dot } from "../../components/Dot";
 import { SelectProductViewButton } from "../../components/SelectProductViewButton";
+import { Button } from "../../components/Button";
+import { Separator } from "../Home/styles";
+import { Footer } from "../../components/Footer";
 
-import { DetailScreenContent, DotContainer, ProductImage, ProductName, ProductPrice, ProductViews } from "./styles";
+import {
+  DetailScreenContent,
+  DotContainer,
+  ProductImage,
+  ProductName,
+  ProductPrice,
+  ProductViews,
+  TextDescription,
+  TextDetails,
+  TextList,
+  TextTitle
+} from "./styles";
 
 type RootStackParamList = {
   Detail: undefined;
@@ -48,6 +62,25 @@ export function Detail({ navigation }: DetailScreenProps) {
           <SelectProductViewButton>42</SelectProductViewButton>
         </ScrollView>
       </ProductViews>
+
+      <TextDetails>
+        <TextTitle>Nike Downshifter 10</TextTitle>
+
+        <TextDescription>
+          O Tênis Nike Masculino Downshifter 10 traz amortecimento e suporte atualizados, para garantir uma corrida
+          estável e confortável.
+        </TextDescription>
+
+        <TextList>- Categoria: Amortecimento</TextList>
+
+        <TextList>- Material: Mesh</TextList>
+
+        <Button />
+
+        <Separator />
+      </TextDetails>
+
+      <Footer />
     </DetailScreenContent>
   );
 }

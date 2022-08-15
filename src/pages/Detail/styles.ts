@@ -36,3 +36,24 @@ export const ProductViews = styled.View`
   flex-direction: row;
   width: 100%;
 `;
+
+export const TextDetails = styled.View`
+  padding: 0px 2%;
+  margin: 2% 0px;
+`;
+
+export const TextTitle = styled.Text`
+  font-size: ${RFValue(22)}px;
+  margin: 2% 0px;
+`;
+
+export const TextDescription = styled.Text`
+  font-size: ${RFValue(16)}px;
+  line-height: ${RFValue(24)}px;
+  margin: 2% 0px;
+`;
+
+export const TextList = styled.Text`
+  font-size: ${RFValue(16)}px;
+  line-height: ${RFValue(24)}px;
+`;

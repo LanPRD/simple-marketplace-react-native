@@ -5,7 +5,7 @@ interface DotProps {
   color: string;
 }
 
-export const DotContent = styled.View<DotProps>`
+export const DotContent = styled.TouchableOpacity<DotProps>`
   width: ${RFValue(24)}px;
   height: ${RFValue(24)}px;
   border-radius: ${RFValue(100)}px;
